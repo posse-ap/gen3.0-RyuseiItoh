@@ -1,0 +1,365 @@
+@media screen and ( min-width:480px ){
+    .modal-container {
+        width: 900px;
+        height: 550px;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: fixed;
+        display: none;
+        background-color: white;
+        z-index: 999;
+    }
+    
+    .modalClose button{
+        float: right;
+        margin: 15px;
+        border-radius: 50%;
+        border: none;
+        width: 40px;
+        height: 40px;
+        background-color: #F5F5F8
+    }
+    
+    .block {
+        display: block;
+    }
+    
+    .block1 {
+        display: none;
+    }
+    
+    .modalInner {
+        width: 100%;
+        max-height: 100%;
+        display: flex;
+        margin-top: 50px;
+        padding-left: 56px;
+        padding-right: 56px;
+        gap: 40px;
+    }
+    
+    .modalLeft {
+        width: 50%;
+        height: 380px;
+    }
+    
+    .modalRight{
+        width: 50%;
+        height: 380px;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    
+    .frameParent {
+        border: none;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        display: inline-block;
+        background-color: #F5F5F8;
+    }
+    
+    .silverBackground{
+        /* width: 400px; */
+        height: 60px;
+        border-radius: 5%;
+        background-color: #F5F5F8;
+        align-items: center;
+        border:none;
+    }
+    
+    .flexBox {
+        display:flex; 
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .frameSecondParent {
+        padding: 4px 10px;
+        background-color: #F5F5F8;
+        border:none;
+        border-radius: 20px;
+    }
+    
+    .margin {
+        margin-top: 20px;
+    }
+    
+    .recordButton {
+        text-align: center;
+    }
+    
+    .recordButtonChild{
+        background: linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
+        box-shadow: 0 0 10px rgba(53, 44, 44, 0);
+        width: 40%;
+        height: 50px;
+        border-radius: 25px;
+        color: white;
+        font-size: 18px;
+        border: none;
+    }
+    
+    .twitterBox{
+        width: 100%;
+        height: 200px;
+        border-radius: 5%;
+        border:none;
+    }
+    
+    .twitterBox {
+        background-color: #F5F5F8;
+    }
+    
+    
+    .login-modal-wrapper {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+    }
+    
+    @keyframes spinner {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .loading {
+        width: 8em;
+        height: 8em;
+        border-radius: 50%;
+        border: 0.8em solid white;
+        border-bottom-color: blue;
+        border-right-color: blue;
+        border-left-color:blue ;
+        animation: spinner 2.0s linear infinite;
+    }
+    
+    .loadingContainer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .postingCompleted {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    
+    .postingCompleted img {
+        height: 150px;
+        width: 100%;
+    
+    }
+    
+    .awesome {
+        color: #BEE360;
+        font-size: 25px;
+    }
+    
+    .recordFont {
+        font-size: 20px;
+    }
+
+    .allBlue {
+        background-color: #E7F5FF;
+
+    }
+}
+
+/* ウィンドウ幅が0〜479pxの場合に適用するCSS */
+@media screen and ( max-width:479px ){
+    .modal-container {
+        width: 100%;
+        height: 92%;
+        margin: 0 auto;
+        border-top-right-radius:  20px;
+        border-top-left-radius: 20px;
+        background-color: white;
+        top: 54.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: fixed;
+        display: none;
+        background-color: white;
+        z-index: 999;
+    }
+
+    .modalClose button{
+        float: right;
+        margin: 15px;
+        border-radius: 50%;
+        border: none;
+        width: 40px;
+        height: 40px;
+        background-color: #F5F5F8
+    }
+    
+    .block {
+        display: block;
+    }
+    .block1 {
+        display: none;
+    }
+    
+    .modalInner {
+        width: 100%;
+        height: 78%;
+        margin-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .modalLeft {
+        width: 100%;
+        height: 330px;
+    }
+    
+    .modalRight{
+        width: 100%;
+        height: 210px;
+    }
+    .bold {
+        font-weight: bold;
+        font-size: 12px;
+    }
+    
+    .frameParent {
+        border: none;
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        display: inline-block;
+        background-color: #F5F5F8;
+    }
+    
+    .silverBackground{
+        /* width: 400px; */
+        height: 50px;
+        border-radius: 5%;
+        background-color: #F5F5F8;
+        align-items: center;
+        border:none;
+    }
+    
+    .flexBox {
+        display:flex; 
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .frameSecondParent {
+        padding: 4px 10px;
+        background-color: #F5F5F8;
+        border:none;
+        border-radius: 20px;
+        height: 30px;
+    }
+    
+    .margin {
+        margin-top: 10px;
+    }
+    .margin2 {
+        margin-top: 10px;
+    }
+    
+    .recordButton {
+        text-align: center;
+    }
+    
+    .recordButtonChild{
+        background: linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
+        box-shadow: 0 0 5px rgba(53, 44, 44, 0);
+        width: 80%;
+        height: 50px;
+        border-radius: 25px;
+        color: white;
+        font-size: 20px;
+        border: none;
+    }
+    
+    .twitterBox{
+        width: 100%;
+        height: 90px;
+        border-radius: 5%;
+        border:none;
+    }
+    
+    .twitterBox {
+        background-color: #F5F5F8;
+    }
+    
+    
+    .login-modal-wrapper {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+    }
+    
+    @keyframes spinner {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .loading {
+        width: 8em;
+        height: 8em;
+        border-radius: 50%;
+        border: 0.8em solid white;
+        border-bottom-color: blue;
+        border-right-color: blue;
+        border-left-color:blue ;
+        animation: spinner 2.0s linear infinite;
+    }
+    
+    .loadingContainer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .postingCompleted {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    
+    .postingCompleted img {
+        height: 150px;
+        width: 100%;
+    
+    }
+    
+    .awesome {
+        color: #BEE360;
+        font-size: 25px;
+    }
+    
+    .recordFont {
+        font-size: 20px;
+    }
+}

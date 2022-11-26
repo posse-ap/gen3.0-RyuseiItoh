@@ -1,129 +1,194 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>POSSEWEBサイト</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css" />
-</head>
+    <title>WebApp</title>
+    
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modal.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-<body>
-    <!-- START HEADER -->
-    <header id="header">
-        <div class="header-logo"><img src="logo.svg" alt="POSSEロゴ"></div>
-        <div class="header-list">
-            <ul>
-                <li><a href="#about">POSSEとは</a></li>
-                <li><a href="#quiz">クイズ</a></li>
-                <li><a href=""><img src="Vector.png" ></a></li>
-                <li><a href=""><img src="icon-instagram.svg"></a></li> 
-            </ul>
-        </div>
-    </header>
-    <!-- END HEADER -->
-
-    <!-- START HEAD -->
-    <section id="hero">
-        <div class="hero-content">
-            <div class="hero-left-box">
-                <h3 class="hero-sub-title">学生プログラミングコミュニティ POSSE（ポッセ）</h3>
-                <h1 class="hero-title">自分史上最高<br>を仲間と。</h1>
-            </div>
-            <div class="hero-image">
-                <img src="posse.jpg.png" alt="">
-            </div>
-        </div>
-        <!-- <div class="scroll-area">
-            <div>Scroll Down</div>
-        </div> -->
-    </section>
-    <!-- END HEAD -->
-
-    <!-- START ABOUT -->
-    <section id="about" class="wrapper">
-        <div class="about-title-area">
-            <h2 class="about-title-area">POSSEとは</h2>
-            <p  class="abouti" href="#About POSSE">About POSSE</p>
-        </div>
-        <div class="about-contents">
-            <div class="sub-hero"><img src="hero.jpg" alt=""></div>
-            <p>
-                学生プログラミングコミュニティ「POSSE（ポッセ）は、人格とプログラミング、二つの面での成長をスローガンに活動しており、大学生だけが集まって学びを深めるコミュニティです。<br>プログラミングだけではありません。オフラインのイベントや旅行など様々な企画を行っています！<br>それらを通じて、夏休みの大半をPOSSEでできた仲間と過ごす人もたくさんいるほどメンバーとの仲が深まります。
-            </p>
-        </div>
-    </section>
-    <!-- END ABOUT -->
-
-    <!-- START CONTACT -->
-    <section id="contact" class="wrapper">
-        <div class="contact-Inner" style="height: 298px">
-            <!--疑似要素を使用 -->
-            <div class="relative b">
-                <img src="background-picture.jpg" alt="">
-                <!-- <div class="blue">
-                </div> -->
-                <div class="absolute">
-                    <div class="line-heading">
-                        <div class="line-icon">
-                            <img src="LINE-Icon.png" alt="">
-                        </div>
-                        <h2 class="contact-title">POSSE公式LINE</h2>
-                    </div>
-                    <p>
-                        公式LINEにてご質問を随時受け付けております。<br>
-                        詳細やPOSSE最新情報につきましては、公式LINEにてお知らせいたしますので<br>
-                        下記ボタンより友達追加をお願いします！
-                    </p>
-                    <div class="btn-area">
-                        <div class="line-link">
-                            <a href="https://line.me/R/ti/p/@651htnqp?from=page" target="_blank" rel="noopener noreferrer class="></a>
-                        </div>
-                        <a class="LINE">LINE追加</a>
-                            <i class="icon-link"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- END CONTACT -->
-
-    <!-- START FOOTER -->
-    <footer id="footer" class="wrapper">
-        <section>
-            <div class="posse-logo"></div>
-            <div><img src="logo.svg" alt=""></div>
-            <p>POSSE 公式サイト</p>
-            <div class="footer-icon-area">
-                    <p class="twtter"><a herf=""><img src="Vector.png"></a></p>
-                    <p><a href=""><img src="icon-instagram.svg" ></a></p>
-            </div>
-        </section>
-
-    </footer>
-    <div class="copyright-area">
-        <small>&copy; 2022 POSSE</small>
-    </div>
-    <!-- END FOOTER -->
-</body>
-
-</html>
-
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+  </head>
+  <body>
     <header>
-
+      <div class="headerLeft">
+        <img src="https://posse-ap.com/img/posseLogo.png" alt="POSSEロゴ" />
+        <p>4th week</p>
+      </div>
+      
+      <button id="headerRightButton"  class="headerRightButton">記録・投稿</button>
+      <script src="./js/chart.js" defer></script>
     </header>
     
-</body>
-</html>
+
+
+    <main>
+      <div class="graphArea" >
+        <div class="leftSide">
+          <div class="hourBoxParent">
+            <div class="hourBoxChild boxCopy">
+              <p class="hourBoxChildTopText">Today</p>
+              <p class="hourBoxChildcount">3</p>
+              <p class="hourBoxChildUnderText">hour</p>
+            </div>
+            <div class="hourBoxChild boxCopy">
+              <p class="hourBoxChildTopText">Month</p>
+              <p class="hourBoxChildcount">120</p>
+              <p class="hourBoxChildUnderText">hour</p>
+            </div>
+            <div class="hourBoxChild boxCopy">
+              <p class="hourBoxChildTopText">Total</p>
+              <p class="hourBoxChildcount">1348</p>
+              <p class="hourBoxChildUnderText">hour</p>
+            </div>
+          </div>
+          <div class="borderParents">
+            <div class="border"></div>
+          </div>
+          <div class="lineGraph boxCopy2">
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+        
+        <div class="rightSide">
+          <div class="studyBoxGraph boxCopy">
+            <div class="RightMainText">学習時間</div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <canvas id="myPieChart" ></canvas>
+          </div>
+          
+          <div class="studyBoxGraph boxCopy">
+            <div class="RightMainText">学習コンテンツ</div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <canvas id="myPieChart2"></canvas>
+          </div>
+        </div>
+      </div>
+      
+      <div id="modal-container" class="modal-container">
+        <div class="loadingContainer">
+          <div id="loading"></div>
+        </div>
+        <div class="modalClose">
+          <button id="modalClose">✖</button>
+        </div>
+
+        <div id="postingCompleted" class="postingCompleted block1">
+          <div id="postingCompletedChild">
+            <h4 class="awesome">AWESOME!</h4>
+            <img src="./images/POSSE_Record-05.jpg" alt="">
+            <h4 class="recordFont">記録・投稿</h4>
+            <h4 class="recordFont">完了しました</h4>
+          </div>
+        </div>
+        
+        <div id="modal_change">
+          <div class="modalInner">
+            <div class="modalLeft">
+              <div>
+                <p class="bold">学習日</p>
+                <div><input class="frameParent" type="text" id="datepicker"></div>
+              </div>
+              <div>
+                <p class="bold margin">学習コンテンツ(複数選択可)</p>
+                <div class="flexBox">
+                  <label  class="frameSecondParent"for="">
+                    <input class="allBlue" id="checkBlue1" type="checkbox">N予備校
+                  </label>
+                  <label  class="frameSecondParent"for="">
+                    <input class="allBlue" id="checkBlue2" type="checkbox">ドットインストール
+                  </label>
+                  <label  class="frameSecondParent"for="">
+                    <input class="allBlue" id="checkBlue3" type="checkbox">POSSE課題
+                  </label>
+                </div>
+              </div>
+              <div>
+                <p class="bold margin">学習言語(複数選択可)</p>
+                <div class="flexBox">
+                  <label  class="frameSecondParent allBlue"for="">
+                    <input id="checkBlue4" type="checkbox">HTML
+                  </label>
+                  <label  class="frameSecondParent"for="">
+                    <input class="allBlue" id="checkBlue5" type="checkbox">CSS
+                  </label>
+                  <label  class="frameSecondParent"for="">
+                    <input class="allBlue" id="checkBlue6" type="checkbox">JavaScripttttttt
+                  </label>
+                  <label  class="frameSecondParent"for="">
+                    <input class="allBlue" id="checkBlue7" type="checkbox">PHP
+                  </label>
+                  <label  class="frameSecondParent"for="">
+                    <input class="allBlue" id="checkBlue8"type="checkbox">Laravel
+                  </label>
+                  <label  class="frameSecondParent"for="">
+                    <input class="allBlue" id="checkBlue9" type="checkbox">SQL
+                  </label>
+                  <label  class="frameSecondParent"for="">
+                    <input class="allBlue" id="checkBlue10" type="checkbox">SHELL
+                  </label>
+                  <label  class="frameSecondParent"for="">
+                    <input class="allBlue" id="checkBlue11" type="checkbox">情報システム基礎知識（その他）
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="modalRight">
+              <div>
+                <p class="bold">学習時間</p>
+                <div><input class="frameParent" type="text" id="datepicker"></div>
+              </div>
+              
+              <div>
+                <div class="bold margin">Twitter用コメント</div>
+                <input id="input-message" class="twitterBox" type="text">
+              </div>
+              <div class="flexBox margin">
+                <input id="check1" class="share bold" type="checkbox">Twitterにシェアする
+              </div>
+            </div>
+          </div>
+          <div class="recordButton"><button id="record" class="recordButtonChild margin2" onclick="buttonClick()">記録・投稿</button></div>
+        </div>
+        <!-- <div id="postingCompleted" class="postingCompleted">
+          <h4>AWESOME!</h4>
+          <img src="./images/POSSE_Record-05.jpg" alt="チェックマーク">
+          <h3>記録・投稿</h3>
+          <h3>完了しました</h3>
+        </div> -->
+        
+      </div>
+              <!-- 「login-modal」というidを追加してください -->
+              <div class="login-modal-wrapper" id="login-modal">
+              <!-- ログインのモーダル部分のHTMLを貼り付けてください -->
+              </div>
+
+              <div class="endCorner">
+                <div class="fotterInner"><</div>
+                <div class="fotterInner">2020年 10月</div>
+                <div class="footerInner">></div>
+              </div>
+    </main>
+
+    <footer>
+      <button id="headerRightButton2"  class="headerRightButton2">記録・投稿</button>
+    </footer>
+    
+    <script src="./js/chart.js"></script>
+    <!-- <script src="./js/jquery-3.6.1.min.js"></script> -->
+    <script src="./js/modal.js"></script>
+    
+  </body>
+  </html>
+  
